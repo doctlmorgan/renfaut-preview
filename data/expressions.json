@@ -1,0 +1,48 @@
+{
+  "expressions": [
+    {
+      "pattern": "H-H",
+      "es": "H",
+      "ra": "H",
+      "name": "Transformative Liberation",
+      "descriptiveLine": "Transforming Systems",
+      "shortDescription": "Power is redistributed, equitable practices become embedded, and transformation is sustained through shared leadership, accountability, and continual learning.",
+      "leadershipImpact": "You are positioned to create lasting, equity-centered transformation by redistributing power, strengthening accountability, and helping to embed equitable practices in the way people and organizations learn, lead, and evolve.",
+      "deepeningPractice": "To further expand your influence, continue building systems that develop other leaders, distribute responsibility, and embed equity into everyday organizational practice so that transformation continues beyond your direct influence.",
+      "active": true
+    },
+    {
+      "pattern": "H-L",
+      "es": "H",
+      "ra": "L",
+      "name": "Regenerative Stability",
+      "descriptiveLine": "Strengthening Systems",
+      "shortDescription": "Systems become stronger through increased trust, healthier relationships, and more equitable practices, creating a stable foundation for continued transformation.",
+      "leadershipImpact": "Your leadership is building healthier systems by fostering trust, stability, and thoughtful improvement while creating opportunities to expand shared leadership and collective ownership.",
+      "deepeningPractice": "Building on this foundation, intentionally expand opportunities for shared leadership by broadening participation in decision-making and increasing collective ownership of organizational priorities.",
+      "active": true
+    },
+    {
+      "pattern": "L-H",
+      "es": "L",
+      "ra": "H",
+      "name": "Performative Change",
+      "descriptiveLine": "Mobilizing Change",
+      "shortDescription": "Energy and momentum generate visible change, but without meaningful shifts in power, transformation remains difficult to sustain.",
+      "leadershipImpact": "You bring energy and momentum for change, creating opportunities to strengthen how power, voice, and decision-making are shared across your organization.",
+      "deepeningPractice": "Your next opportunity is to redesign structures, governance, and accountability so that changes in practice are accompanied by meaningful shifts in power and influence.",
+      "active": true
+    },
+    {
+      "pattern": "L-L",
+      "es": "L",
+      "ra": "L",
+      "name": "Stagnation",
+      "descriptiveLine": "Creating the Conditions for Change",
+      "shortDescription": "Existing patterns continue to shape outcomes, highlighting opportunities to build greater awareness, shared responsibility, and readiness for transformation.",
+      "leadershipImpact": "Your greatest contribution lies in providing the stability and consistency that can serve as the foundation for intentionally reshaping systems and advancing more equitable outcomes.",
+      "deepeningPractice": "One way to strengthen your leadership is to examine one long-standing practice through an equity lens, inviting diverse perspectives and creating opportunities for shared reflection that open new pathways for organizational change.",
+      "active": true
+    }
+  ]
+}

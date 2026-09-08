@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>R.I.S.E. Index™ | Renfaut™</title>
+<meta content="Take the R.I.S.E. Index™, a leadership assessment grounded in the Renfaut™ Praxis Paradigm that helps leaders understand their equity-centered leadership practices." name="description"/>
+<style>
+:root{
+  --ink:#24194f; --muted:#625b78; --ivory:#fbf7ef; --paper:#fffdfa; --line:rgba(36,25,79,.14);
+  --rr:#B31217; --rr2:#8A0E12; --rrl:#F6D6D7;
+  --ib:#E76F00; --ib2:#B85A00; --ibl:#FBE2C7;
+  --de:#F7B500; --de2:#C88F00; --del:#FDEFC2;
+  --es:#38BFD8; --es2:#238FA3; --esl:#D7F1F6;
+  --ra:#6C3FBF; --ra2:#532E96; --ral:#E5DDF5;
+  --shadow:0 24px 60px rgba(36,25,79,.13);
+  --radius:28px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:var(--ivory);line-height:1.55}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+.header{position:sticky;top:0;z-index:50;background:rgba(251,247,239,.88);backdrop-filter:blur(20px);border-bottom:1px solid var(--line)}
+.nav{max-width:1240px;margin:0 auto;padding:16px 28px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.brand{display:flex;align-items:center;gap:14px;min-width:220px}
+.brand-icon{width:38px;height:38px;object-fit:contain}
+.brand-word{height:42px;width:auto;object-fit:contain}
+.navlinks{display:flex;gap:28px;align-items:center;font-weight:800;color:#47405f}
+.navlinks a{padding:8px 0;border-bottom:2px solid transparent}
+.navlinks a:hover,.navlinks a.active{color:var(--ink);border-color:var(--ra)}
+.cta{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:16px 24px;border-radius:999px;background:var(--rr);color:white;font-weight:900;box-shadow:0 18px 38px rgba(179,18,23,.25);transition:.22s ease}
+.cta:hover{transform:translateY(-2px);background:var(--rr2)}
+.cta.secondary{background:white;color:var(--ink);border:1px solid var(--line);box-shadow:none}
+.cta.secondary:hover{background:#fff7f7;border-color:rgba(179,18,23,.25)}
+.container{max-width:1240px;margin:0 auto;padding:0 28px}
+.hero{position:relative;overflow:hidden;padding:86px 0 72px;background:radial-gradient(circle at 76% 22%, rgba(56,191,216,.18), transparent 34%),radial-gradient(circle at 9% 10%, rgba(247,181,0,.18), transparent 31%),linear-gradient(180deg,#fffaf2 0%,#fbf7ef 100%)}
+.hero-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:62px;align-items:center}
+.kicker{letter-spacing:.18em;text-transform:uppercase;color:var(--ra);font-weight:950;font-size:.84rem;margin-bottom:18px}
+h1{font-size:clamp(3.4rem,7vw,6.4rem);line-height:.94;margin:0 0 24px;letter-spacing:-.07em;color:var(--ink)}
+.lead{font-size:clamp(1.18rem,1.8vw,1.55rem);color:var(--muted);max-width:720px;margin:0 0 34px;line-height:1.55}
+.actions{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+.hero-card{position:relative;background:rgba(255,255,255,.78);border:1px solid rgba(36,25,79,.10);border-radius:36px;padding:34px;box-shadow:var(--shadow);overflow:hidden}
+.ribbon-soft{opacity:.95;margin:4px 0 18px;filter:drop-shadow(0 18px 22px rgba(36,25,79,.08))}
+.qr-wrap{display:grid;grid-template-columns:140px 1fr;gap:20px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:24px;padding:18px;margin-top:20px}
+.qr-wrap img{border-radius:14px;width:140px;background:white}
+.qr-title{font-weight:950;font-size:1.05rem;margin-bottom:4px}
+.qr-text{color:var(--muted);font-weight:650;font-size:.96rem}
+.section{padding:86px 0}
+.section.alt{background:white}
+.section.dark{background:var(--ink);color:white;position:relative;overflow:hidden}
+.section-head{max-width:820px;margin-bottom:42px}
+.eyebrow{font-weight:950;text-transform:uppercase;letter-spacing:.16em;color:var(--ib);font-size:.8rem;margin-bottom:10px}
+h2{font-size:clamp(2.2rem,4.2vw,4.2rem);line-height:1.0;letter-spacing:-.055em;margin:0 0 18px;color:var(--ink)}
+.dark h2{color:white}
+.section p{font-size:1.13rem;color:var(--muted);margin:0 0 16px;max-width:850px}
+.dark p{color:rgba(255,255,255,.78)}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:28px;align-items:center}
+.card{background:rgba(255,255,255,.82);border:1px solid var(--line);border-radius:var(--radius);padding:28px;box-shadow:0 16px 36px rgba(36,25,79,.07)}
+.card h3{margin:0 0 10px;font-size:1.36rem;letter-spacing:-.035em;color:var(--ink)}
+.card p{font-size:1rem;margin:0;color:var(--muted)}
+.card .num{width:44px;height:44px;border-radius:16px;display:grid;place-items:center;font-weight:950;color:white;margin-bottom:18px;background:var(--ra)}
+.steps{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+.step{background:#fff;border:1px solid var(--line);border-radius:24px;padding:22px;text-align:center;position:relative}
+.step strong{display:block;font-size:1.05rem;color:var(--ink);margin-bottom:6px}
+.step span{font-size:.9rem;color:var(--muted);font-weight:650}
+.principles{display:grid;grid-template-columns:repeat(5,1fr);gap:18px}
+.principle{border-radius:26px;padding:22px;border:1px solid var(--line);background:white;min-height:260px;transition:.24s ease}
+.principle:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+.principle img{height:74px;width:74px;object-fit:contain;margin-bottom:18px}
+.principle .label{font-size:.74rem;text-transform:uppercase;letter-spacing:.16em;font-weight:950;margin-bottom:8px}
+.principle h3{font-size:1.28rem;line-height:1.05;margin:0 0 12px;letter-spacing:-.035em}
+.principle p{font-size:.95rem;margin:0;color:var(--muted)}
+.rr{background:linear-gradient(180deg,#fff,var(--rrl));border-color:rgba(179,18,23,.22)} .rr .label,.rr h3{color:var(--rr2)}
+.ib{background:linear-gradient(180deg,#fff,var(--ibl));border-color:rgba(231,111,0,.22)} .ib .label,.ib h3{color:var(--ib2)}
+.de{background:linear-gradient(180deg,#fff,var(--del));border-color:rgba(247,181,0,.28)} .de .label,.de h3{color:var(--de2)}
+.es{background:linear-gradient(180deg,#fff,var(--esl));border-color:rgba(56,191,216,.28)} .es .label,.es h3{color:var(--es2)}
+.ra{background:linear-gradient(180deg,#fff,var(--ral));border-color:rgba(108,63,191,.25)} .ra .label,.ra h3{color:var(--ra2)}
+.report{background:#fff;border:1px solid var(--line);border-radius:34px;padding:30px;box-shadow:var(--shadow)}
+.report-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:26px}
+.badge{display:inline-flex;padding:8px 12px;border-radius:999px;background:var(--ral);color:var(--ra2);font-weight:950;font-size:.8rem}
+.bar{height:13px;background:#efeaf7;border-radius:999px;overflow:hidden;margin-top:8px}
+.fill{height:100%;border-radius:999px;background:linear-gradient(90deg,var(--rr),var(--ib),var(--de),var(--es),var(--ra))}
+.mini{display:grid;gap:17px}
+.mini-item strong{font-size:.9rem}
+.mini-item span{float:right;font-weight:900;color:var(--ink)}
+.faq{display:grid;gap:14px}
+details{background:#fff;border:1px solid var(--line);border-radius:22px;padding:20px 22px}
+summary{cursor:pointer;font-weight:950;font-size:1.08rem}
+details p{font-size:1rem;margin-top:12px}
+.footer{background:#171238;color:white;padding:54px 0 28px}
+.footer-grid{display:grid;grid-template-columns:1.2fr .8fr .8fr;gap:36px}
+.footer a{color:rgba(255,255,255,.80)}
+.footer h4{margin:0 0 12px}
+.footer p,.footer li{color:rgba(255,255,255,.70)}
+.footer ul{list-style:none;padding:0;margin:0;display:grid;gap:8px}
+.footer-brand{display:flex;align-items:center;gap:12px;margin-bottom:14px}
+.footer-brand img:first-child{width:44px}
+.footer-brand img:last-child{height:38px;width:auto}
+.copy{border-top:1px solid rgba(255,255,255,.12);margin-top:36px;padding-top:24px;color:rgba(255,255,255,.58);font-size:.92rem}
+@media(max-width:960px){.nav{flex-wrap:wrap}.navlinks{order:3;width:100%;justify-content:center;gap:16px;flex-wrap:wrap}.hero-grid,.grid-2{grid-template-columns:1fr}.grid-3,.principles,.steps,.footer-grid{grid-template-columns:1fr 1fr}h1{font-size:clamp(3rem,12vw,5rem)}}
+@media(max-width:640px){.container,.nav{padding-left:18px;padding-right:18px}.brand{min-width:0}.brand-word{height:34px}.nav .cta{width:100%}.grid-3,.principles,.steps,.footer-grid{grid-template-columns:1fr}.hero{padding-top:54px}.qr-wrap{grid-template-columns:1fr;text-align:center}.qr-wrap img{margin:auto}}
+</style>
+<link href="/css/site-shell.css" rel="stylesheet"/><script defer="True" src="/js/site-shell.js"></script> 
+
+
+
+
+
+
+
+
+<link href="/assets/icons/favicon/favicon.ico" rel="icon" sizes="any"/><link href="/assets/icons/favicon/favicon.svg" rel="icon" type="image/svg+xml"/><link href="/assets/icons/favicon/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/><link href="/assets/icons/favicon/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/><link href="/assets/icons/favicon/apple-touch-icon.png" rel="apple-touch-icon"/><link href="/assets/icons/favicon/site.webmanifest" rel="manifest"/><link href="https://renfaut.org/rise-index.html" rel="canonical"/><meta content="website" property="og:type"/><meta content="https://renfaut.org/rise-index.html" property="og:url"/><meta content="Renfaut" property="og:site_name"/><meta content="R.I.S.E. Index™ | Renfaut™" property="og:title"/><meta content="Take the R.I.S.E. Index™, a leadership assessment grounded in the Renfaut™ Praxis Paradigm that helps leaders understand their equity-centered leadership practices." property="og:description"/><meta content="https://renfaut.org/assets/social/social-preview.png" property="og:image"/><meta content="https://renfaut.org/assets/social/social-preview.png" property="og:image:secure_url"/><meta content="image/png" property="og:image:type"/><meta content="1200" property="og:image:width"/><meta content="630" property="og:image:height"/><meta content="summary_large_image" name="twitter:card"/><meta content="R.I.S.E. Index™ | Renfaut™" name="twitter:title"/><meta content="Take the R.I.S.E. Index™, a leadership assessment grounded in the Renfaut™ Praxis Paradigm that helps leaders understand their equity-centered leadership practices." name="twitter:description"/><meta content="https://renfaut.org/assets/social/social-preview.png" name="twitter:image"/></head>
+<body>
+<main>
+<section class="hero">
+<div class="container hero-grid">
+<div>
+<div class="kicker">The R.I.S.E. Index™</div>
+<h1>Begin with how you lead.</h1>
+<p class="lead">The R.I.S.E. Index™ is a leadership assessment grounded in the Renfaut™ Praxis Paradigm. It helps leaders understand how their everyday practices align with equity-centered transformation.</p>
+<div class="actions">
+<a class="cta" href="/rise-inventory.html">Take the R.I.S.E. Index™</a>
+<a class="cta secondary" href="/leadership-lab.html">Explore the Leadership Lab™</a>
+</div>
+</div>
+<aside aria-label="R.I.S.E. Index access card" class="hero-card">
+<img alt="" class="ribbon-soft" src="/assets/illustrations/rise-ribbon-soft.jpg"/>
+<div class="qr-wrap">
+<a aria-label="Open the R.I.S.E. Index assessment" href="/rise-inventory.html"><img alt="QR code for the R.I.S.E. Index assessment" src="/assets/qr/rise-index-qr.png?v=20260715"/></a>
+<div>
+<div class="qr-title">Scan or click to begin.</div>
+<div class="qr-text">Use the QR code or button to open the R.I.S.E. Index™ assessment.</div>
+</div>
+</div>
+</aside>
+</div>
+</section>
+<section class="section alt" id="about-rise">
+<div class="container grid-2">
+<div class="section-head">
+<div class="eyebrow">What it is</div>
+<h2>A leadership profile, not a personality test.</h2>
+<p>The R.I.S.E. Index™ focuses on leadership practice. It helps leaders reflect on how they see systems, engage uncertainty, act with courage, shift organizational conditions, and sustain renewal over time.</p>
+<p>Participants receive a personalized Leadership Profile that translates assessment results into practical insight and next steps for growth.</p>
+</div>
+<div aria-label="Sample Leadership Profile mockup" class="report">
+<div class="report-top">
+<div><strong>Leadership Profile</strong><br/><span style="color:var(--muted);font-weight:700">Sample preview</span></div>
+<span class="badge">R.I.S.E. Index™</span>
+</div>
+<div class="mini">
+<div class="mini-item"><strong>Reality Reckoning</strong><span>82</span><div class="bar"><div class="fill" style="width:82%"></div></div></div>
+<div class="mini-item"><strong>Indeterminate Becoming</strong><span>76</span><div class="bar"><div class="fill" style="width:76%"></div></div></div>
+<div class="mini-item"><strong>Disruptive Engagement</strong><span>79</span><div class="bar"><div class="fill" style="width:79%"></div></div></div>
+<div class="mini-item"><strong>Emancipatory Shift</strong><span>73</span><div class="bar"><div class="fill" style="width:73%"></div></div></div>
+<div class="mini-item"><strong>Radical Renewal</strong><span>84</span><div class="bar"><div class="fill" style="width:84%"></div></div></div>
+</div>
+</div>
+</div>
+</section>
+<section class="section" id="receive">
+<div class="container">
+<div class="section-head">
+<div class="eyebrow">What you receive</div>
+<h2>Insight you can use.</h2>
+<p>Your Leadership Profile gives you a structured way to understand strengths, growth opportunities, and practical next steps across the Renfaut™ Praxis Paradigm.</p>
+</div>
+<div class="grid-3">
+<div class="card"><div class="num">1</div><h3>Five Principle Scores</h3><p>A snapshot of how your leadership practices align across the five Renfaut™ principles.</p></div>
+<div class="card"><div class="num">2</div><h3>Fifteen Practice Facets</h3><p>Detailed feedback across the leadership practices that shape transformative action.</p></div>
+<div class="card"><div class="num">3</div><h3>Leadership Strengths</h3><p>Areas where your current practice shows meaningful capacity for equity-centered leadership.</p></div>
+<div class="card"><div class="num">4</div><h3>Growth Opportunities</h3><p>Developmental areas that can deepen reflexivity, courage, and systems-level practice.</p></div>
+<div class="card"><div class="num">5</div><h3>Reflection Prompts</h3><p>Questions that help you translate assessment results into more intentional leadership practice.</p></div>
+<div class="card"><div class="num">6</div><h3>Practical Recommendations</h3><p>Next steps for individual growth, coaching, or participation in the Leadership Lab™.</p></div>
+</div>
+</div>
+</section>
+<section class="section alt" id="principles">
+<div class="container">
+<div class="section-head">
+<div class="eyebrow">What it measures</div>
+<h2>Five principles. Fifteen facets.</h2>
+<p>The R.I.S.E. Index™ measures leadership practice through the five principles of the Renfaut™ Praxis Paradigm.</p>
+</div>
+<div class="principles">
+<a class="principle rr" href="principles.html#reality-reckoning"><img alt="Reality Reckoning icon" src="/assets/icons/principles/rr-brand.svg"/><div class="label">Reality Reckoning</div><h3>See systems clearly.</h3><p>Systemic Literacy, Positionality Literacy, Truth-Telling Capacity.</p></a>
+<a class="principle ib" href="principles.html#indeterminate-becoming"><img alt="Indeterminate Becoming icon" src="/assets/icons/principles/ib-brand.svg"/><div class="label">Indeterminate Becoming</div><h3>Imagine new possibilities.</h3><p>Nonlinear Thinking, Identity Flex in Context, Emergent Humility.</p></a>
+<a class="principle de" href="principles.html#disruptive-engagement"><img alt="Disruptive Engagement icon" src="/assets/icons/principles/de-brand.svg"/><div class="label">Disruptive Engagement</div><h3>Act with courage.</h3><p>Interruptive Practice, Solidarity Praxis, Dialogic Disruption.</p></a>
+<a class="principle es" href="principles.html#emancipatory-shift"><img alt="Emancipatory Shift icon" src="/assets/icons/principles/es-brand.svg"/><div class="label">Emancipatory Shift</div><h3>Shift conditions.</h3><p>Visionary Praxis, Systems Reorientation, Transformative Policy Praxis.</p></a>
+<a class="principle ra" href="principles.html#radical-renewal"><img alt="Radical Renewal icon" src="/assets/icons/principles/ra-brand.svg"/><div class="label">Radical Renewal</div><h3>Sustain renewal.</h3><p>Regenerative Orientation, Collective Centering, Return to Relation.</p></a>
+</div>
+</div>
+</section>
+<section class="section" id="process">
+<div class="container">
+<div class="section-head">
+<div class="eyebrow">How it works</div>
+<h2>From assessment to action.</h2>
+<p>The R.I.S.E. Index™ is designed to be a starting point for growth, reflection, coaching, and organizational development.</p>
+</div>
+<div class="steps">
+<div class="step"><strong>Take</strong><span>Complete the assessment.</span></div>
+<div class="step"><strong>Receive</strong><span>Review your Leadership Profile.</span></div>
+<div class="step"><strong>Reflect</strong><span>Make sense of your results.</span></div>
+<div class="step"><strong>Practice</strong><span>Identify actions for growth.</span></div>
+<div class="step"><strong>Develop</strong><span>Continue through coaching or lab work.</span></div>
+</div>
+</div>
+</section>
+<section class="section dark" id="teams">
+<div class="container grid-2">
+<div>
+<div class="eyebrow" style="color:var(--de)">For organizations</div>
+<h2>Use the R.I.S.E. Index™ with teams.</h2>
+<p>Organizations can use the R.I.S.E. Index™ as the entry point for collective leadership development, team learning, and the Renfaut Leadership Lab™.</p>
+<p>When used with groups, the assessment can support shared sensemaking, collective reflection, and a deeper understanding of how leadership practices are distributed across a team.</p>
+<div class="actions" style="margin-top:26px">
+<a class="cta" href="/contact.html">Start a Team Conversation</a>
+<a class="cta secondary" href="/leadership-lab.html">Explore Leadership Lab™</a>
+</div>
+</div>
+<div class="card" style="background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.16);box-shadow:none">
+<h3 style="color:white">Best used for</h3>
+<p style="color:rgba(255,255,255,.78)">Leadership teams, executive cohorts, nonprofit organizations, foundations, school districts, higher education, healthcare, government, and community-based organizations seeking equity-centered transformation.</p>
+</div>
+</div>
+</section>
+<section class="section alt" id="faq">
+<div class="container">
+<div class="section-head">
+<div class="eyebrow">Questions</div>
+<h2>Common questions.</h2>
+</div>
+<div class="faq">
+<details><summary>How long does it take?</summary><p>The assessment is designed to be completed in one sitting. Most participants should set aside focused time so they can respond reflectively.</p></details>
+<details><summary>Is this a personality test?</summary><p>No. The R.I.S.E. Index™ focuses on leadership practice, reflexivity, and developmental patterns connected to transformative leadership.</p></details>
+<details><summary>Can my organization use it with a group?</summary><p>Yes. The R.I.S.E. Index™ can be used with teams as part of leadership development, coaching, or a Leadership Lab™ engagement.</p></details>
+<details><summary>What happens after I take it?</summary><p>Your results can be used for personal reflection, coaching, team development, or as the starting point for a Leadership Lab™ experience.</p></details>
+</div>
+</div>
+</section>
+<section class="section" id="start">
+<div class="container grid-2">
+<div>
+<div class="eyebrow">Begin</div>
+<h2>Ready to see your leadership more clearly?</h2>
+<p>Take the R.I.S.E. Index™ to begin your personalized leadership profile and identify next steps for equity-centered transformation.</p>
+<div class="actions" style="margin-top:24px">
+<a class="cta" href="/rise-inventory.html">Take the R.I.S.E. Index™</a>
+<a class="cta secondary" href="/contact.html">Contact Dr. Morgan</a>
+</div>
+</div>
+<div class="qr-wrap" style="margin:0;grid-template-columns:170px 1fr;padding:24px;border-radius:30px">
+<a href="/rise-inventory.html"><img alt="QR code for R.I.S.E. Index assessment" src="/assets/qr/rise-index-qr.png?v=20260715" style="width:170px"/></a>
+<div><div class="qr-title" style="font-size:1.35rem">Scan to begin.</div><div class="qr-text">The QR code opens the R.I.S.E. Index™ assessment directly.</div></div>
+</div>
+</div>
+</section>
+</main>
+</body>
+</html>

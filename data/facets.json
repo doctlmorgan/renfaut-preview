@@ -1,0 +1,185 @@
+{
+  "facets": [
+    {
+      "code": "SL",
+      "name": "Systemic Literacy",
+      "principleCode": "RR",
+      "itemIds": [
+        "RS_RR_SL_1",
+        "RS_RR_SL_2",
+        "RS_RR_SL_3",
+        "RS_RR_SL_4",
+        "RS_RR_SL_5",
+        "RS_RR_SL_6"
+      ],
+      "aggregationMethod": "weighted_mean"
+    },
+    {
+      "code": "PL",
+      "name": "Positionality Literacy",
+      "principleCode": "RR",
+      "itemIds": [
+        "RS_RR_PL_1",
+        "RS_RR_PL_3",
+        "RS_RR_PL_4",
+        "RS_IB_DIF_2",
+        "RS_IB_DIF_3"
+      ],
+      "aggregationMethod": "weighted_mean"
+    },
+    {
+      "code": "TTC",
+      "name": "Truth-Telling Capacity",
+      "principleCode": "RR",
+      "itemIds": [
+        "RS_RR_TTC_1",
+        "RS_RR_TTC_2",
+        "RS_RR_TTC_3",
+        "RS_RR_TTC_4"
+      ],
+      "aggregationMethod": "weighted_mean"
+    },
+    {
+      "code": "NT",
+      "name": "Nonlinear Thinking",
+      "principleCode": "IB",
+      "itemIds": [
+        "RS_IB_NT_1",
+        "RS_IB_NT_2",
+        "RS_IB_NT_3"
+      ],
+      "aggregationMethod": "weighted_mean"
+    },
+    {
+      "code": "IFC",
+      "name": "Identity Flex in Context",
+      "principleCode": "IB",
+      "itemIds": [
+        "RS_IB_DIF_5",
+        "RS_IB_EH_1",
+        "RS_IB_EH_6",
+        "RS_DE_DD_2",
+        "RS_ES_LI_3",
+        "RS_ES_SR_3"
+      ],
+      "aggregationMethod": "weighted_mean"
+    },
+    {
+      "code": "EH",
+      "name": "Emergent Humility",
+      "principleCode": "IB",
+      "itemIds": [
+        "RS_IB_EH_2",
+        "RS_IB_EH_5",
+        "RS_DE_SP_4",
+        "RS_ES_SR_5"
+      ],
+      "aggregationMethod": "weighted_mean"
+    },
+    {
+      "code": "IP",
+      "name": "Interruptive Practice",
+      "principleCode": "DE",
+      "itemIds": [
+        "RS_DE_IP_1",
+        "RS_DE_IP_2",
+        "RS_DE_IP_3",
+        "RS_DE_IP_4"
+      ],
+      "aggregationMethod": "weighted_mean"
+    },
+    {
+      "code": "SP",
+      "name": "Solidarity Praxis",
+      "principleCode": "DE",
+      "itemIds": [
+        "RS_DE_IP_5",
+        "RS_DE_SP_2",
+        "RS_DE_SP_3",
+        "RS_DE_SP_5",
+        "RS_DE_SP_6"
+      ],
+      "aggregationMethod": "weighted_mean"
+    },
+    {
+      "code": "AE",
+      "name": "Accountable Engagement",
+      "principleCode": "DE",
+      "itemIds": [
+        "RS_DE_DD_5",
+        "RS_ES_TPP_3",
+        "RS_ES_TPP_5",
+        "RS_RA_RO_2",
+        "RS_RA_RtR_4",
+        "RS_RA_RtR_5"
+      ],
+      "aggregationMethod": "weighted_mean"
+    },
+    {
+      "code": "VP",
+      "name": "Visionary Praxis",
+      "principleCode": "ES",
+      "itemIds": [
+        "RS_ES_LI_2",
+        "RS_ES_LI_4",
+        "RS_ES_LI_5"
+      ],
+      "aggregationMethod": "weighted_mean"
+    },
+    {
+      "code": "SR",
+      "name": "Systems Reorientation",
+      "principleCode": "ES",
+      "itemIds": [
+        "RS_ES_SR_1",
+        "RS_ES_SR_2",
+        "RS_ES_SR_4"
+      ],
+      "aggregationMethod": "weighted_mean"
+    },
+    {
+      "code": "TPP",
+      "name": "Transformative Policy Praxis",
+      "principleCode": "ES",
+      "itemIds": [
+        "RS_ES_TPP_1",
+        "RS_ES_TPP_2",
+        "RS_ES_TPP_4"
+      ],
+      "aggregationMethod": "weighted_mean"
+    },
+    {
+      "code": "RO",
+      "name": "Regenerative Orientation",
+      "principleCode": "RA",
+      "itemIds": [
+        "RS_RA_RO_3",
+        "RS_RA_RO_4",
+        "RS_RA_RO_5"
+      ],
+      "aggregationMethod": "weighted_mean"
+    },
+    {
+      "code": "CC",
+      "name": "Collective Centering",
+      "principleCode": "RA",
+      "itemIds": [
+        "RS_RA_CC_1",
+        "RS_RA_CC_4",
+        "RS_RA_CC_5"
+      ],
+      "aggregationMethod": "weighted_mean"
+    },
+    {
+      "code": "RtR",
+      "name": "Return to Relation",
+      "principleCode": "RA",
+      "itemIds": [
+        "RS_RA_RtR_1",
+        "RS_RA_RtR_2",
+        "RS_RA_RtR_3"
+      ],
+      "aggregationMethod": "weighted_mean"
+    }
+  ]
+}

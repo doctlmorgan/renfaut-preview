@@ -1,0 +1,54 @@
+{
+  "standardization": {
+    "formula": "rawMean * 25",
+    "rawMin": 1,
+    "rawMax": 4,
+    "standardizedMin": 25,
+    "standardizedMax": 100
+  },
+  "principleAggregation": "item_weighted_mean",
+  "facetAggregation": "weighted_mean",
+  "developmentBands": [
+    {
+      "order": 1,
+      "label": "Engaging",
+      "min": 25.0,
+      "max": 61.99,
+      "key": "engaging",
+      "shortInterpretation": "This leadership practice is emerging in your current practice."
+    },
+    {
+      "order": 2,
+      "label": "Enacting",
+      "min": 62.0,
+      "max": 85.99,
+      "key": "enacting",
+      "shortInterpretation": "This leadership practice is consistently evident in your current practice."
+    },
+    {
+      "order": 3,
+      "label": "Empowering",
+      "min": 86.0,
+      "max": 100.0,
+      "key": "empowering",
+      "shortInterpretation": "This leadership practice is a defining strength in your current practice."
+    }
+  ],
+  "highLowThresholds": {
+    "RR": 77.08,
+    "IB": 70.83,
+    "DE": 75.0,
+    "ES": 75.0,
+    "RA": 68.18
+  },
+  "configurationPrinciples": [
+    "RR",
+    "IB",
+    "DE"
+  ],
+  "expressionPrinciples": [
+    "ES",
+    "RA"
+  ],
+  "missingResponsePolicy": "block_submission"
+}

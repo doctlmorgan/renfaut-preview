@@ -1,0 +1,33 @@
+{
+  "scale": [
+    {
+      "displayOrder": 1,
+      "label": "Not Like Me",
+      "value": 1,
+      "reverseValue": 4,
+      "key": "not_like_me"
+    },
+    {
+      "displayOrder": 2,
+      "label": "A Little Like Me",
+      "value": 2,
+      "reverseValue": 3,
+      "key": "a_little_like_me"
+    },
+    {
+      "displayOrder": 3,
+      "label": "Somewhat Like Me",
+      "value": 3,
+      "reverseValue": 2,
+      "key": "somewhat_like_me"
+    },
+    {
+      "displayOrder": 4,
+      "label": "Very Much Like Me",
+      "value": 4,
+      "reverseValue": 1,
+      "key": "very_much_like_me"
+    }
+  ],
+  "reverseFormula": "5 - responseValue"
+}

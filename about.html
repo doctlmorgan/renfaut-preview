@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>What Is Renfaut? | Renfaut™ Praxis Paradigm</title>
+<meta content="Discover Renfaut™, a praxis paradigm created by T. Lee Morgan, Ph.D. for equity-centered leadership, transformative learning, and systemic change." name="description"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<style>
+    :root{
+      --purple:#2F2A56;--red:#B31217;--orange:#E76F00;--gold:#F2C94C;--teal:#2D9C8C;
+      --ink:#292438;--muted:#686174;--ivory:#FBF7EF;--cream:#F7EEDF;--white:#fff;
+      --line:rgba(47,42,86,.14);--shadow:0 24px 70px rgba(47,42,86,.12)
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--ivory);color:var(--ink);font-family:Manrope,system-ui,sans-serif;line-height:1.65}
+    main{overflow:hidden}
+    a{color:inherit}
+    .wrap{width:min(1180px,calc(100% - 40px));margin:auto}
+    .section{padding:96px 0}
+    .soft{background:#fffaf4;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+    .eyebrow{font-size:.78rem;letter-spacing:.17em;text-transform:uppercase;font-weight:800;color:#6b40a5;margin:0 0 16px}
+    h1,h2,h3{color:var(--purple);letter-spacing:-.045em;margin:0}
+    h1{font-size:clamp(3.35rem,7vw,7rem);line-height:.94;max-width:900px}
+    h2{font-size:clamp(2.3rem,4.5vw,4.7rem);line-height:1.02}
+    h3{font-size:1.28rem;line-height:1.25}
+    p{margin:0;color:var(--muted)}
+    .lead{font-size:clamp(1.15rem,2vw,1.38rem);max-width:780px;margin-top:24px}
+    .btns{display:flex;gap:14px;flex-wrap:wrap;margin-top:34px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;min-height:54px;padding:0 24px;border-radius:999px;text-decoration:none;font-weight:800;border:1px solid transparent;transition:.2s ease}
+    .btn:hover{transform:translateY(-2px)}
+    .btn-red{background:var(--red);color:#fff;box-shadow:0 16px 38px rgba(179,18,23,.23)}
+    .btn-light{background:#fff;color:var(--purple);border-color:var(--line)}
+    .hero{position:relative;padding:105px 0 92px;background:
+      radial-gradient(circle at 12% 20%,rgba(242,201,76,.22),transparent 32rem),
+      radial-gradient(circle at 88% 18%,rgba(45,156,140,.16),transparent 34rem),
+      var(--ivory)}
+    .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center}
+    .hero-art{min-height:500px;border-radius:40px;background:rgba(255,255,255,.8);border:1px solid var(--line);box-shadow:var(--shadow);display:grid;place-items:center;padding:50px;position:relative}
+    .hero-art img{width:min(430px,90%);filter:drop-shadow(0 22px 32px rgba(47,42,86,.14))}
+    .hero-art::after{content:"Transformation is the realization of possibilities that once seemed beyond reach.";position:absolute;left:34px;right:34px;bottom:30px;background:rgba(255,255,255,.85);border:1px solid var(--line);border-radius:22px;padding:20px 22px;color:var(--purple);font-weight:700;text-align:center}
+    .problem-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:54px;align-items:start}
+    .problem-card,.praxis-card,.principle-card,.theory-card,.path-card{background:#fff;border:1px solid var(--line);border-radius:28px;box-shadow:0 16px 50px rgba(47,42,86,.07)}
+    .problem-card{padding:32px}
+    .problem-card h3{margin-bottom:18px}
+    .checklist{display:grid;gap:13px;margin:0;padding:0;list-style:none;color:var(--muted)}
+    .checklist li::before{content:"•";color:var(--red);font-weight:900;margin-right:10px}
+    .question{margin-top:28px;padding:30px;border-radius:26px;background:var(--purple);color:#fff;font-size:clamp(1.35rem,2.3vw,2rem);line-height:1.35;font-weight:750}
+    .question span{display:block;font-size:.76rem;text-transform:uppercase;letter-spacing:.14em;color:rgba(255,255,255,.68);margin-bottom:10px}
+    .declaration{text-align:center;max-width:900px;margin:0 auto 44px}
+    .declaration p{font-size:1.15rem;margin-top:22px}
+    .not-list{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin:28px 0 0}
+    .not-list span{border:1px solid var(--line);background:#fff;border-radius:999px;padding:10px 16px;font-weight:750;color:var(--purple)}
+    .praxis-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:40px}
+    .praxis-card{padding:30px}
+    .praxis-card .number{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;background:#f0e8fb;color:#6b40a5;font-weight:900;margin-bottom:18px}
+    .praxis-card p{margin-top:12px}
+    .transform{background:var(--purple);color:#fff;text-align:center}
+    .transform h2,.transform h3{color:#fff}
+    .transform p{color:rgba(255,255,255,.78)}
+    .transform-quote{font-size:clamp(2rem,4.3vw,4.2rem);line-height:1.08;font-weight:800;max-width:960px;margin:0 auto}
+    .transform-quote span{display:block;color:#f3d07b;margin-top:12px}
+    .principle-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;margin-top:42px}
+    .principle-card{padding:24px 20px;min-height:220px;position:relative;overflow:hidden;text-decoration:none;transition:.2s ease}
+    .principle-card:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
+    .principle-card::before{content:"";position:absolute;left:0;right:0;top:0;height:7px;background:var(--accent)}
+    .principle-card .order{font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;font-weight:800;color:var(--accent);margin:8px 0 18px}
+    .principle-card p{font-size:.96rem;margin-top:12px}
+    .note{max-width:850px;margin:28px auto 0;text-align:center}
+    .theory-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:40px}
+    .theory-card{padding:30px}
+    .theory-card strong{display:inline-grid;place-items:center;width:52px;height:52px;border-radius:16px;background:var(--purple);color:#fff;margin-bottom:20px}
+    .theory-card p{margin-top:12px}
+    .questions{background:var(--purple);color:#fff}
+    .questions h2{color:#fff;text-align:center}
+    .questions .eyebrow{text-align:center;color:#d6b8ff}
+    .question-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:42px}
+    .question-card{padding:26px;border-radius:24px;border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.07);font-size:1.14rem;font-weight:700;color:#fff}
+    .path{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-top:40px;align-items:stretch}
+    .path-card{padding:24px;text-align:center;position:relative}
+    .path-card:not(:last-child)::after{content:"→";position:absolute;right:-19px;top:50%;transform:translateY(-50%);color:#9a90ad;font-size:1.55rem;font-weight:900;z-index:2}
+    .path-card small{display:block;color:#7b7188;font-size:.72rem;text-transform:uppercase;letter-spacing:.13em;font-weight:800;margin-bottom:8px}
+    .practice-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:40px}
+    .practice-card{border-radius:30px;padding:34px;border:1px solid var(--line);background:#fff;box-shadow:0 18px 54px rgba(47,42,86,.08)}
+    .practice-card p{margin:14px 0 24px}
+    .final{text-align:center;padding:100px 0;background:linear-gradient(135deg,#2F2A56,#44366f);color:#fff}
+    .final h2{color:#fff;max-width:900px;margin:auto}
+    .final p{color:rgba(255,255,255,.78);font-size:1.16rem;max-width:760px;margin:22px auto 0}
+    .final .btns{justify-content:center}
+    @media(max-width:980px){.hero-grid,.problem-grid{grid-template-columns:1fr}.hero-art{min-height:420px}.principle-grid{grid-template-columns:repeat(2,1fr)}.theory-grid,.praxis-grid{grid-template-columns:1fr}.path{grid-template-columns:1fr}.path-card:not(:last-child)::after{content:"↓";right:auto;left:50%;top:auto;bottom:-27px;transform:translateX(-50%)}.practice-grid{grid-template-columns:1fr}}
+    @media(max-width:680px){.section{padding:72px 0}.hero{padding:74px 0 70px}.hero-art{min-height:340px;padding:28px}.hero-art::after{left:18px;right:18px;bottom:18px;font-size:.86rem;padding:14px}.principle-grid,.question-grid{grid-template-columns:1fr}.problem-card,.praxis-card,.theory-card,.practice-card{padding:24px}}
+  </style>
+<link href="/css/site-shell.css" rel="stylesheet"/><script defer="True" src="/js/site-shell.js"></script> 
+
+
+
+
+
+
+
+
+<link href="/assets/icons/favicon/favicon.ico" rel="icon" sizes="any"/><link href="/assets/icons/favicon/favicon.svg" rel="icon" type="image/svg+xml"/><link href="/assets/icons/favicon/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/><link href="/assets/icons/favicon/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/><link href="/assets/icons/favicon/apple-touch-icon.png" rel="apple-touch-icon"/><link href="/assets/icons/favicon/site.webmanifest" rel="manifest"/><link href="https://renfaut.org/about.html" rel="canonical"/><meta content="website" property="og:type"/><meta content="https://renfaut.org/about.html" property="og:url"/><meta content="Renfaut" property="og:site_name"/><meta content="What Is Renfaut? | Renfaut™ Praxis Paradigm" property="og:title"/><meta content="Discover Renfaut™, a praxis paradigm created by T. Lee Morgan, Ph.D. for equity-centered leadership, transformative learning, and systemic change." property="og:description"/><meta content="https://renfaut.org/assets/social/social-preview.png" property="og:image"/><meta content="https://renfaut.org/assets/social/social-preview.png" property="og:image:secure_url"/><meta content="image/png" property="og:image:type"/><meta content="1200" property="og:image:width"/><meta content="630" property="og:image:height"/><meta content="summary_large_image" name="twitter:card"/><meta content="What Is Renfaut? | Renfaut™ Praxis Paradigm" name="twitter:title"/><meta content="Discover Renfaut™, a praxis paradigm created by T. Lee Morgan, Ph.D. for equity-centered leadership, transformative learning, and systemic change." name="twitter:description"/><meta content="https://renfaut.org/assets/social/social-preview.png" name="twitter:image"/></head>
+<body>
+<main>
+<section class="hero">
+<div class="wrap hero-grid">
+<div>
+<p class="eyebrow">The Renfaut™ Praxis Paradigm</p>
+<h1>Organizations do not transform simply because they want to.</h1>
+<p class="lead">Organizations can adopt new language, revise policies, and launch equity initiatives while continuing to reproduce the conditions they seek to change. Renfaut™ offers a different way of understanding transformation.</p>
+<div class="btns">
+<a class="btn btn-red" href="/principles.html">Explore the Praxis Paradigm</a>
+<a class="btn btn-light" href="/rise-index.html">Discover the R.I.S.E. Index™</a>
+</div>
+</div>
+<div aria-label="Renfaut ribbon mark" class="hero-art">
+<img alt="Renfaut ribbon" src="/assets/illustrations/renfaut-ribbon.svg"/>
+</div>
+</div>
+</section>
+<section class="section soft">
+<div class="wrap problem-grid">
+<div>
+<p class="eyebrow">Why Renfaut?</p>
+<h2>Change can occur without transformation.</h2>
+<p class="lead">Strategic plans, training, listening sessions, new policies, and public commitments may create movement. Yet without shifts in power, relationships, meaning, and organizational conditions, that movement often remains temporary or performative.</p>
+</div>
+<div>
+<article class="problem-card">
+<h3>Traditional approaches often begin with activity.</h3>
+<ul class="checklist">
+<li>What initiative should we launch?</li>
+<li>What policy should we revise?</li>
+<li>What training should we require?</li>
+<li>What outcome should we measure?</li>
+</ul>
+</article>
+<div class="question"><span>Renfaut asks a different question</span>What organizational relationships, practices, and structures make equitable thriving possible?</div>
+</div>
+</div>
+</section>
+<section class="section">
+<div class="wrap">
+<div class="declaration">
+<p class="eyebrow">A Praxis Paradigm</p>
+<h2>Renfaut is an integrated way of knowing, being, and doing.</h2>
+<p>It helps leaders understand how power and inequity operate, locate themselves within complex systems, and cultivate the conditions through which justice-centered transformation can emerge.</p>
+<div class="not-list"><span>Not a checklist</span><span>Not a linear model</span><span>Not a personality type</span><span>Not a quick fix</span></div>
+</div>
+<div class="praxis-grid">
+<article class="praxis-card"><div class="number">1</div><h3>Ways of Knowing</h3><p>How leaders interpret reality, examine power, and recognize the mechanisms shaping organizational outcomes.</p></article>
+<article class="praxis-card"><div class="number">2</div><h3>Ways of Being</h3><p>How leaders practice reflexivity, humility, accountability, and relational presence within complex systems.</p></article>
+<article class="praxis-card"><div class="number">3</div><h3>Ways of Doing</h3><p>How leaders interrupt harm, redistribute power, create new possibilities, and sustain renewal in practice.</p></article>
+</div>
+</div>
+</section>
+<section class="section transform">
+<div class="wrap">
+<p class="eyebrow" style="color:#d6b8ff;text-align:center">Transformation, Not Adjustment</p>
+<div class="transform-quote">Change modifies what an organization does.<span>Transformation changes what an organization becomes.</span></div>
+<p class="note">Transformation is relational, nonlinear, adaptive, and ongoing. It is not a final stabilized state, but a responsive way of being capable of continual renewal.</p>
+</div>
+</section>
+<section class="section" id="principles">
+<div class="wrap">
+<p class="eyebrow">Five Interdependent Principles</p>
+<h2>One living system of transformative practice.</h2>
+<div class="principle-grid">
+<a class="principle-card" href="principles.html#reality-reckoning" style="--accent:#B31217"><div class="order">See</div><h3>Reality Reckoning</h3><p>Learning to see systems as they truly are.</p></a>
+<a class="principle-card" href="principles.html#indeterminate-becoming" style="--accent:#E76F00"><div class="order">Imagine</div><h3>Indeterminate Becoming</h3><p>Expanding what leaders believe is possible.</p></a>
+<a class="principle-card" href="principles.html#disruptive-engagement" style="--accent:#D7A900"><div class="order">Act</div><h3>Disruptive Engagement</h3><p>Turning awareness into courageous action.</p></a>
+<a class="principle-card" href="principles.html#emancipatory-shift" style="--accent:#2D9C8C"><div class="order">Shift</div><h3>Emancipatory Shift</h3><p>Changing the conditions that shape organizational life.</p></a>
+<a class="principle-card" href="principles.html#radical-renewal" style="--accent:#6B40A5"><div class="order">Renew</div><h3>Radical Renewal</h3><p>Sustaining transformation through ongoing regeneration.</p></a>
+</div>
+<p class="note">The principles are not sequential stages. They operate as mutually reinforcing conditions whose interaction generates transformative potential.</p>
+</div>
+</section>
+<section class="section soft">
+<div class="wrap">
+<p class="eyebrow">Intellectual Foundations</p>
+<h2>Built through three critical traditions.</h2>
+<div class="theory-grid">
+<article class="theory-card"><strong>CRT</strong><h3>Critical Race Theory</h3><p>Makes race, power, history, and structural inequity visible within leadership and organizational life.</p></article>
+<article class="theory-card"><strong>CR</strong><h3>Critical Realism</h3><p>Examines the underlying structures and causal mechanisms that generate the outcomes we can observe.</p></article>
+<article class="theory-card"><strong>CT</strong><h3>Complexity Theory</h3><p>Understands transformation as emergent, relational, nonlinear, and shaped through interacting conditions.</p></article>
+</div>
+</div>
+</section>
+<section class="section questions">
+<div class="wrap">
+<p class="eyebrow">Questions Renfaut Asks</p>
+<h2>Transformation begins with different questions.</h2>
+<div class="question-grid">
+<div class="question-card">What truths are too costly to speak here?</div>
+<div class="question-card">Who benefits from the current system?</div>
+<div class="question-card">Whose discomfort organizes the system?</div>
+<div class="question-card">Who absorbs the risk of honesty?</div>
+<div class="question-card">What futures are impossible within current conditions?</div>
+<div class="question-card">Where is power being protected through language, process, or civility?</div>
+</div>
+</div>
+</section>
+<section class="section">
+<div class="wrap">
+<p class="eyebrow">From Theory to Practice</p>
+<h2>A connected pathway for reflection, development, and transformation.</h2>
+<div class="path">
+<div class="path-card"><small>Paradigm</small><h3>Renfaut™</h3></div>
+<div class="path-card"><small>Assessment</small><h3>R.I.S.E. Index™</h3></div>
+<div class="path-card"><small>Insight</small><h3>Leadership Profile</h3></div>
+<div class="path-card"><small>Development</small><h3>Leadership Lab™</h3></div>
+<div class="path-card"><small>Application</small><h3>Transformative Practice</h3></div>
+</div>
+</div>
+</section>
+<section class="section soft">
+<div class="wrap">
+<p class="eyebrow">Renfaut in Practice</p>
+<h2>Move from understanding to intentional action.</h2>
+<div class="practice-grid">
+<article class="practice-card"><h3>R.I.S.E. Index™</h3><p>Reflect on how the five Renfaut principles and fifteen leadership practices currently appear in your professional practice and organizational context.</p><a class="btn btn-red" href="/rise-index.html">Explore the R.I.S.E. Index™</a></article>
+<article class="practice-card"><h3>Leadership Lab™</h3><p>Turn insight into practice through facilitated learning, individual development, team reflection, and organizational application.</p><a class="btn btn-light" href="/leadership-lab.html">Explore Leadership Lab™</a></article>
+</div>
+</div>
+</section>
+<section class="final">
+<div class="wrap">
+<h2>The goal is not perfection. The goal is more intentional practice.</h2>
+<p>Renfaut invites leaders to create the conditions for equity, liberation, collective flourishing, and continual renewal.</p>
+<div class="btns"><a class="btn btn-red" href="/rise-inventory.html">Complete the R.I.S.E. Index™</a><a class="btn btn-light" href="/contact.html">Start a Conversation</a></div>
+</div>
+</section>
+</main>
+</body>
+</html>

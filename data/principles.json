@@ -1,0 +1,79 @@
+{
+  "principles": [
+    {
+      "code": "RR",
+      "name": "Reality Reckoning",
+      "facets": [
+        "SL",
+        "PL",
+        "TTC"
+      ],
+      "aggregationMethod": "item_weighted_mean",
+      "standardization": "raw_mean_times_25",
+      "descriptiveLabel": "Insightful Leadership",
+      "leadershipContribution": "Your ability to recognize systemic patterns, examine assumptions, and name difficult truths helps individuals and organizations build a stronger foundation for informed and intentional action.",
+      "developmentEdge": "Deepening your ability to recognize systemic patterns, question underlying assumptions, and name difficult truths will strengthen your capacity to lead equitable and lasting change.",
+      "icon": "assets/icons/principles/rr-preview.png"
+    },
+    {
+      "code": "IB",
+      "name": "Indeterminate Becoming",
+      "facets": [
+        "NT",
+        "IFC",
+        "EH"
+      ],
+      "aggregationMethod": "item_weighted_mean",
+      "standardization": "raw_mean_times_25",
+      "descriptiveLabel": "Adaptive Leadership",
+      "leadershipContribution": "By embracing uncertainty with curiosity, flexibility, and openness, you create opportunities for learning, innovation, and new possibilities to emerge.",
+      "developmentEdge": "Becoming more comfortable with uncertainty, experimentation, and continuous learning will expand your ability to navigate complexity with confidence and possibility.",
+      "icon": "assets/icons/principles/ib-preview.png"
+    },
+    {
+      "code": "DE",
+      "name": "Disruptive Engagement",
+      "facets": [
+        "IP",
+        "SP",
+        "AE"
+      ],
+      "aggregationMethod": "item_weighted_mean",
+      "standardization": "raw_mean_times_25",
+      "descriptiveLabel": "Courageous Leadership",
+      "leadershipContribution": "You inspire meaningful action by addressing difficult issues, challenging inequitable patterns, and encouraging others to move from awareness toward purposeful change.",
+      "developmentEdge": "Further developing your willingness to engage difficult conversations and challenge inequitable patterns will help transform insight into meaningful and sustained action.",
+      "icon": "assets/icons/principles/de-preview.png"
+    },
+    {
+      "code": "ES",
+      "name": "Emancipatory Shift",
+      "facets": [
+        "VP",
+        "SR",
+        "TPP"
+      ],
+      "aggregationMethod": "item_weighted_mean",
+      "standardization": "raw_mean_times_25",
+      "descriptiveLabel": "Emancipatory Leadership",
+      "leadershipContribution": "Your leadership expands participation, redistributes power, and strengthens the systems that enable collective voice, accountability, and belonging to flourish.",
+      "developmentEdge": "Creating more opportunities to share power, broaden participation, and strengthen collective ownership will deepen your ability to advance equitable organizational change.",
+      "icon": "assets/icons/principles/es-preview.png"
+    },
+    {
+      "code": "RA",
+      "name": "Radical Renewal",
+      "facets": [
+        "RO",
+        "CC",
+        "RtR"
+      ],
+      "aggregationMethod": "item_weighted_mean",
+      "standardization": "raw_mean_times_25",
+      "descriptiveLabel": "Renewing Leadership",
+      "leadershipContribution": "Through your commitment to long-term growth and resilience, you help sustain meaningful change by embedding equitable practices into the everyday life of the organization.",
+      "developmentEdge": "Building greater capacity to sustain change through resilience, shared accountability, and continuous learning will help embed equity into the everyday life of your organization.",
+      "icon": "assets/icons/principles/ra-preview.png"
+    }
+  ]
+}

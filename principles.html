@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Five Principles | Renfaut™</title>
+<meta content="Explore the five principles and fifteen facets of the Renfaut™ Praxis Paradigm and how they work together to produce transformative leadership." name="description"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<style>
+    :root{
+      --rr:#B31217; --rr-a:#8A0E12; --rr-f:#F6D6D7;
+      --ib:#E76F00; --ib-a:#B85A00; --ib-f:#FBE2C7;
+      --de:#F7B500; --de-a:#C88F00; --de-f:#FDEFC2;
+      --es:#38BFD8; --es-a:#238FA3; --es-f:#D7F1F6;
+      --ra:#6C3FBF; --ra-a:#532E96; --ra-f:#E5DDF5;
+      --ink:#231747;
+      --muted:#625874;
+      --paper:#fffaf1;
+      --cream:#fff7e6;
+      --line:rgba(47,42,86,.14);
+      --shadow:0 22px 70px rgba(47,42,86,.12);
+      --radius:28px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;color:var(--ink);background:var(--paper);line-height:1.55}
+    a{color:inherit;text-decoration:none}
+    img{max-width:100%;display:block}
+    .container{width:min(1180px,calc(100% - 44px));margin:0 auto}
+
+    .nav{position:sticky;top:0;z-index:50;background:rgba(255,250,241,.92);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+    .nav-inner{height:74px;display:flex;align-items:center;justify-content:space-between;gap:22px}
+    .brand{display:flex;align-items:center;gap:10px;font-weight:900;color:var(--ra-a);letter-spacing:.01em}
+    .brand-mark{width:38px;height:38px;object-fit:contain;border-radius:10px;filter:drop-shadow(0 8px 14px rgba(47,42,86,.12))}
+    .brand-text{font-size:20px;line-height:1;white-space:nowrap}
+    .links{display:flex;align-items:center;gap:22px;font-size:14px;font-weight:800;color:#514866}
+    .links a:hover{color:var(--rr)}
+    .btn{display:inline-flex;align-items:center;justify-content:center;border-radius:999px;padding:13px 20px;font-weight:900;border:1px solid transparent;transition:.22s ease;white-space:nowrap}
+    .btn-primary{background:var(--rr);color:#fff;box-shadow:0 14px 34px rgba(179,18,23,.22)}
+    .btn-primary:hover{transform:translateY(-2px);box-shadow:0 20px 50px rgba(179,18,23,.3)}
+    .btn-secondary{background:#fff;color:var(--ra-a);border-color:var(--line)}
+    .btn-secondary:hover{transform:translateY(-2px);border-color:var(--ra)}
+
+    .hero{overflow:hidden;position:relative;padding:84px 0 72px;background:radial-gradient(circle at 8% 14%,rgba(247,181,0,.16),transparent 34%),radial-gradient(circle at 92% 0%,rgba(56,191,216,.15),transparent 40%),linear-gradient(180deg,#fffdf8 0%,#fff7e7 100%)}
+    .hero-grid{display:grid;grid-template-columns:1fr .9fr;gap:56px;align-items:center}
+    .eyebrow{font-size:13px;letter-spacing:.16em;text-transform:uppercase;font-weight:900;margin:0 0 14px;color:var(--ra)}
+    h1,h2,h3,p{margin-top:0}
+    h1{font-size:clamp(3rem,5.6vw,5.4rem);line-height:.98;letter-spacing:-.07em;margin:0 0 22px;color:var(--ink);max-width:760px}
+    .lead{font-size:clamp(1.08rem,1.7vw,1.42rem);color:var(--muted);max-width:650px;margin-bottom:26px}
+    .hero-actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:18px}
+    .hero-visual{position:relative;border-radius:34px;background:rgba(255,255,255,.72);border:1px solid rgba(255,255,255,.9);padding:34px;box-shadow:var(--shadow)}
+    .hero-ribbon{width:100%;height:auto;object-fit:contain}
+    .hero-caption{font-weight:800;color:#514866;font-size:14px;margin:22px 0 0}
+
+    section{padding:84px 0}
+    .intro{text-align:center;max-width:850px;margin:0 auto 42px}
+    .intro h2{font-size:clamp(2.3rem,4vw,4.1rem);line-height:1.02;letter-spacing:-.055em;margin-bottom:16px;color:var(--ink)}
+    .intro p{font-size:1.16rem;color:var(--muted)}
+    .system-line{display:flex;justify-content:center;align-items:center;gap:12px;flex-wrap:wrap;margin-top:26px}
+    .system-chip{background:#fff;border:1px solid var(--line);border-radius:999px;padding:10px 18px;font-weight:900;box-shadow:0 10px 26px rgba(47,42,86,.06)}
+    .arrow{color:#8f86a3;font-weight:900;font-size:24px}
+
+    .principle-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;margin-top:44px}
+    .principle-card{display:block;background:linear-gradient(180deg,#fff,var(--f));border:1px solid color-mix(in srgb, var(--c) 34%, white);border-radius:28px;padding:20px 18px 24px;min-height:258px;box-shadow:0 16px 45px rgba(47,42,86,.08);transition:.25s ease;position:relative;overflow:hidden}
+    .principle-card:before{content:"";position:absolute;inset:0 0 auto;height:6px;background:var(--c)}
+    .principle-card:hover{transform:translateY(-7px);box-shadow:0 28px 70px rgba(47,42,86,.15)}
+    .icon-wrap{height:76px;display:flex;align-items:center;margin-bottom:12px}
+    .icon-wrap img{width:66px;height:66px;object-fit:contain;transition:.25s ease;filter:drop-shadow(0 12px 16px rgba(47,42,86,.12))}
+    .principle-card:hover img{transform:scale(1.06) rotate(-3deg)}
+    .principle-card .eyebrow{margin-bottom:6px;color:var(--a);font-size:12px}
+    .principle-card h3{margin-bottom:10px;color:var(--a);font-size:21px;line-height:1.05;letter-spacing:-.04em}
+    .principle-card p:last-child{margin:0;color:#625874;font-size:15px}
+
+    .principle-detail{padding:92px 0;scroll-margin-top:86px;background:linear-gradient(90deg,var(--f),#fffdf8 44%,#fff)}
+    .principle-detail:nth-of-type(even){background:linear-gradient(90deg,#fff,var(--f))}
+    .detail-grid{display:grid;grid-template-columns:.72fr 1.28fr;gap:58px;align-items:center}
+    .detail-media{background:#fff;border:1px solid color-mix(in srgb, var(--c) 30%, white);border-radius:42px;min-height:340px;display:flex;align-items:center;justify-content:center;box-shadow:var(--shadow);padding:34px}
+    .detail-media img{width:min(230px,70%);height:auto;object-fit:contain;filter:drop-shadow(0 20px 24px rgba(47,42,86,.15))}
+    .detail-copy .eyebrow{color:var(--a)}
+    .detail-copy h2{color:var(--a);font-size:clamp(2.4rem,4.5vw,4.8rem);line-height:1.02;letter-spacing:-.065em;margin-bottom:22px}
+    .detail-copy > p{font-size:1.25rem;color:var(--muted);max-width:760px}
+    .facet-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:30px}
+    .facet{background:rgba(255,255,255,.72);border:1px solid color-mix(in srgb, var(--c) 24%, white);border-radius:20px;padding:20px;box-shadow:0 12px 28px rgba(47,42,86,.06)}
+    .facet h3{font-size:18px;line-height:1.25;color:var(--a);margin-bottom:10px}
+    .facet p{font-size:15px;color:#625874;margin:0}
+
+    .matrix-section{background:#fffdf8}
+    .matrix{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-top:34px}
+    .matrix-col{border-radius:24px;border:1px solid color-mix(in srgb, var(--c) 28%, white);background:linear-gradient(180deg,#fff,var(--f));overflow:hidden;box-shadow:0 16px 42px rgba(47,42,86,.08)}
+    .matrix-head{padding:20px 18px;border-top:6px solid var(--c)}
+    .matrix-head img{width:44px;height:44px;object-fit:contain;margin-bottom:10px}
+    .matrix-head h3{font-size:19px;line-height:1.1;color:var(--a);margin:0}
+    .matrix-item{padding:16px 18px;border-top:1px solid rgba(47,42,86,.1)}
+    .matrix-item strong{display:block;color:var(--a);font-size:15px;margin-bottom:5px}
+    .matrix-item span{display:block;color:#625874;font-size:13px;line-height:1.45}
+
+    .works{background:linear-gradient(135deg,#281a52 0%,#3a2473 58%,#6c3fbf 100%);color:#fff;position:relative;overflow:hidden}
+    .works:before{content:"";position:absolute;inset:-40% -20% auto auto;width:600px;height:600px;background:radial-gradient(circle,rgba(56,191,216,.38),transparent 60%)}
+    .works .intro h2,.works .intro p,.works .eyebrow{color:#fff}
+    .flow{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;position:relative;z-index:2}
+    .flow-step{background:rgba(255,255,255,.11);border:1px solid rgba(255,255,255,.18);border-radius:24px;padding:22px;backdrop-filter:blur(12px)}
+    .flow-step strong{font-size:18px;display:block;margin-bottom:8px}
+    .flow-step p{color:rgba(255,255,255,.78);font-size:14px;margin:0}
+
+    .comparison{background:var(--cream)}
+    .compare-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:34px}
+    .compare-card{background:#fff;border:1px solid var(--line);border-radius:28px;padding:28px;box-shadow:0 16px 45px rgba(47,42,86,.08)}
+    .compare-card h3{font-size:26px;letter-spacing:-.04em;margin-bottom:16px}
+    .compare-card ul{margin:0;padding-left:18px;color:var(--muted)}
+    .compare-card li{margin:10px 0}
+
+    .cta{background:#fffdf8;text-align:center}
+    .cta-card{background:#fff;border:1px solid var(--line);border-radius:36px;padding:46px;box-shadow:var(--shadow);position:relative;overflow:hidden}
+    .cta-card:before{content:"";position:absolute;inset:0 0 auto;height:8px;background:linear-gradient(90deg,var(--rr),var(--ib),var(--de),var(--es),var(--ra))}
+    .cta-card h2{font-size:clamp(2.1rem,4vw,4rem);letter-spacing:-.055em;line-height:1.04;margin-bottom:12px}
+    .cta-card p{color:var(--muted);font-size:1.12rem;max-width:720px;margin:0 auto 24px}
+    .footer{padding:34px 0;border-top:1px solid var(--line);background:#fffaf1;color:#625874;font-size:14px}
+    .footer-inner{display:flex;justify-content:space-between;gap:20px;align-items:center;flex-wrap:wrap}
+
+    @media (max-width: 980px){
+      .links{display:none}
+      .hero-grid,.detail-grid{grid-template-columns:1fr}
+      .principle-grid,.matrix,.flow{grid-template-columns:1fr 1fr}
+      .detail-copy h2{font-size:3rem}
+      .hero-visual{padding:22px}
+    }
+    @media (max-width: 640px){
+      .container{width:min(100% - 28px,1180px)}
+      .nav-inner{height:auto;padding:13px 0;gap:12px}
+      .brand-text{font-size:17px}
+      .btn{padding:11px 14px;font-size:13px}
+      .hero{padding:50px 0 48px}
+      h1{font-size:3rem;letter-spacing:-.055em}
+      .lead{font-size:1.03rem}
+      section{padding:58px 0}
+      .principle-grid,.matrix,.flow,.facet-grid,.compare-grid{grid-template-columns:1fr}
+      .principle-card{min-height:auto}
+      .detail-media{min-height:250px}
+      .detail-media img{width:175px}
+      .cta-card{padding:34px 22px}
+    }
+  </style>
+<style id="renfaut-global-header-css">
+  :root{--rn-ivory:#fbf7ef;--rn-ink:#2b214f;--rn-muted:#514865;--rn-red:#b31217;--rn-line:rgba(43,33,79,.14);}
+  .rn-site-header{position:sticky;top:0;z-index:1000;background:rgba(251,247,239,.94);backdrop-filter:blur(14px);border-bottom:1px solid var(--rn-line);box-shadow:0 10px 28px rgba(43,33,79,.05);}
+  .rn-nav{width:min(1760px,calc(100% - 72px));margin:0 auto;min-height:96px;display:flex;align-items:center;justify-content:space-between;gap:28px;}
+  .rn-brand{display:flex;align-items:center;gap:14px;text-decoration:none;flex:0 0 auto;min-width:220px;color:var(--rn-ink);}
+  .rn-brand-icon{width:62px;height:62px;object-fit:contain;border-radius:18px;box-shadow:0 14px 32px rgba(43,33,79,.10);background:rgba(255,255,255,.58);}
+  .rn-brand-text{font-family:Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;font-weight:900;font-size:1.72rem;letter-spacing:-.045em;color:var(--rn-ink);line-height:1;white-space:nowrap;}
+  .rn-menu{display:flex;align-items:center;justify-content:center;gap:clamp(20px,2.2vw,38px);flex:1;}
+  .rn-menu a{position:relative;text-decoration:none;color:var(--rn-muted);font-family:Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;font-weight:850;font-size:1.08rem;line-height:1.08;letter-spacing:-.025em;white-space:nowrap;padding:18px 0 16px;}
+  .rn-menu a::after{content:"";position:absolute;left:0;right:0;bottom:7px;height:3px;border-radius:99px;background:#6c3fd6;transform:scaleX(0);transform-origin:center;transition:transform .18s ease;}
+  .rn-menu a:hover::after,.rn-menu a.active::after{transform:scaleX(1);}
+  .rn-menu a.active{color:var(--rn-ink);}
+  .rn-cta{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;background:var(--rn-red);color:#fff;border-radius:999px;padding:20px 34px;font-family:Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;font-weight:900;font-size:1.08rem;letter-spacing:-.02em;line-height:1;white-space:nowrap;box-shadow:0 18px 42px rgba(179,18,23,.22);}
+  .rn-cta:hover{transform:translateY(-1px);box-shadow:0 22px 48px rgba(179,18,23,.26);}
+  @media(max-width:1180px){.rn-nav{width:min(100% - 36px,1100px);min-height:86px;gap:18px}.rn-brand{min-width:0}.rn-brand-text{display:none}.rn-menu{gap:18px}.rn-menu a{font-size:.98rem}.rn-cta{padding:17px 22px;font-size:.98rem}}
+  @media(max-width:840px){.rn-nav{align-items:flex-start;flex-wrap:wrap;padding:14px 0 16px}.rn-brand-icon{width:50px;height:50px}.rn-menu{order:3;width:100%;justify-content:flex-start;overflow-x:auto;gap:22px;padding-bottom:2px}.rn-menu a{font-size:.96rem;padding:10px 0 12px}.rn-cta{margin-left:auto;padding:15px 18px;font-size:.92rem}.rn-site-header{position:relative}}
+</style>
+<style id="renfaut-unified-header-styles">
+  :root{--rn-purple:#2F2A56;--rn-luminal-purple:#6C3FBF;--rn-red:#B31217;--rn-ivory:#FBF7EF;--rn-line:#E7DED1;}
+  .rn-site-header.rn-unified-header{position:sticky;top:0;z-index:1000;background:rgba(251,247,239,.96)!important;backdrop-filter:blur(14px);border-bottom:1px solid var(--rn-line);box-shadow:0 8px 28px rgba(47,42,86,.06);}
+  .rn-unified-nav{min-height:96px!important;max-width:1920px;margin:0 auto!important;padding:0 56px!important;display:grid!important;grid-template-columns:minmax(245px,310px) 1fr auto!important;align-items:center!important;gap:26px!important;}
+  .rn-unified-brand{display:flex!important;align-items:center!important;gap:16px!important;text-decoration:none!important;min-width:240px!important;}
+  .rn-unified-icon{width:54px!important;height:54px!important;object-fit:contain!important;display:block!important;border-radius:15px;box-shadow:0 12px 30px rgba(179,18,23,.10);}
+  .rn-unified-wordmark{height:54px!important;width:auto!important;max-width:230px!important;object-fit:contain!important;display:block!important;background:transparent!important;}
+  .rn-unified-links{display:flex!important;align-items:center!important;justify-content:center!important;gap:30px!important;flex-wrap:nowrap!important;}
+  .rn-unified-links a,.rn-dropdown-toggle{font-family:Inter,Manrope,system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif!important;font-weight:800!important;font-size:19px!important;line-height:1!important;color:var(--rn-purple)!important;text-decoration:none!important;white-space:nowrap!important;letter-spacing:-.01em!important;}
+  .rn-nav-link{position:relative;display:inline-flex!important;align-items:center!important;min-height:42px!important;padding:8px 0!important;}
+  .rn-nav-link::after,.rn-nav-dropdown>.rn-nav-link::after{content:'';position:absolute;left:0;right:0;bottom:0;height:4px;border-radius:999px;background:transparent;transition:background .18s ease, transform .18s ease;transform:scaleX(.2);}
+  .rn-nav-link:hover::after,.rn-nav-link.active::after,.rn-nav-dropdown.active>.rn-nav-link::after{background:var(--rn-luminal-purple);transform:scaleX(1);}
+  .rn-nav-dropdown{position:relative;display:inline-flex;align-items:center;}
+  .rn-dropdown-toggle::before{content:'';position:absolute;inset:0 -14px;}
+  .rn-dropdown-toggle::after{content:'▾';position:static!important;height:auto!important;background:none!important;transform:none!important;margin-left:7px;font-size:13px;color:var(--rn-luminal-purple);}
+  .rn-dropdown-menu{position:absolute;top:100%;left:50%;transform:translateX(-50%) translateY(8px);min-width:260px;background:#fff;border:1px solid rgba(47,42,86,.12);box-shadow:0 24px 50px rgba(47,42,86,.18);border-radius:22px;padding:12px;opacity:0;visibility:hidden;pointer-events:none;transition:opacity .18s ease,transform .18s ease;}
+  .rn-dropdown-menu::before{content:'';position:absolute;left:0;right:0;top:-18px;height:18px;}
+  .rn-nav-dropdown:hover .rn-dropdown-menu,.rn-nav-dropdown:focus-within .rn-dropdown-menu,.rn-nav-dropdown.open .rn-dropdown-menu{opacity:1;visibility:visible;pointer-events:auto;transform:translateX(-50%) translateY(0);}
+  .rn-dropdown-menu a{display:block!important;padding:14px 16px!important;border-radius:14px!important;font-size:16px!important;line-height:1.2!important;color:var(--rn-purple)!important;}
+  .rn-dropdown-menu a:hover{background:#F3ECFF!important;color:var(--rn-luminal-purple)!important;}
+  .rn-unified-cta{display:inline-flex!important;align-items:center!important;justify-content:center!important;min-height:60px!important;padding:0 34px!important;border-radius:999px!important;background:var(--rn-red)!important;color:#fff!important;text-decoration:none!important;font-family:Inter,Manrope,system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif!important;font-weight:900!important;font-size:19px!important;line-height:1!important;white-space:nowrap!important;box-shadow:0 18px 42px rgba(179,18,23,.24)!important;border:0!important;}
+  .rn-unified-cta:hover{transform:translateY(-1px);filter:brightness(.98);}
+  .rn-menu-toggle{display:none!important;}
+  @media (max-width:1280px){.rn-unified-nav{padding:0 34px!important;grid-template-columns:auto 1fr auto!important;gap:18px!important}.rn-unified-links{gap:20px!important}.rn-unified-links a,.rn-dropdown-toggle{font-size:17px!important}.rn-unified-wordmark{height:46px!important;max-width:190px!important}.rn-unified-icon{width:48px!important;height:48px!important}.rn-unified-cta{font-size:17px!important;padding:0 24px!important;min-height:56px!important}}
+  @media (max-width:980px){.rn-unified-nav{grid-template-columns:1fr auto!important;padding:14px 20px!important;min-height:auto!important}.rn-unified-brand{min-width:0!important}.rn-unified-wordmark{height:42px!important}.rn-unified-icon{width:44px!important;height:44px!important}.rn-menu-toggle{display:inline-flex!important;align-items:center!important;justify-content:center!important;border:1px solid rgba(47,42,86,.18)!important;background:#fff!important;color:var(--rn-purple)!important;border-radius:999px!important;padding:10px 15px!important;font-weight:800!important}.rn-unified-links{grid-column:1/-1;order:3;display:flex!important;overflow:auto!important;justify-content:flex-start!important;gap:18px!important;padding:10px 0 4px!important}.rn-unified-cta{grid-column:1/-1;order:4;width:100%!important;margin-top:4px!important}.rn-dropdown-menu{position:static!important;display:none!important;opacity:1!important;visibility:visible!important;pointer-events:auto!important;transform:none!important;box-shadow:none!important;border:0!important;background:rgba(255,255,255,.62)!important;margin:0 0 0 10px!important;min-width:220px!important;padding:8px!important}.rn-nav-dropdown.open .rn-dropdown-menu{display:block!important}.rn-dropdown-toggle::after{display:inline!important}}
+  @media (max-width:620px){.rn-unified-wordmark{height:34px!important;max-width:145px!important}.rn-unified-icon{width:40px!important;height:40px!important}.rn-unified-links a,.rn-dropdown-toggle{font-size:15px!important}.rn-unified-links{gap:16px!important}.rn-unified-cta{font-size:16px!important;min-height:52px!important}}
+</style>
+<link href="/css/site-shell.css" rel="stylesheet"/><script defer="True" src="/js/site-shell.js"></script> 
+
+
+
+
+
+
+
+
+<link href="/assets/icons/favicon/favicon.ico" rel="icon" sizes="any"/><link href="/assets/icons/favicon/favicon.svg" rel="icon" type="image/svg+xml"/><link href="/assets/icons/favicon/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/><link href="/assets/icons/favicon/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/><link href="/assets/icons/favicon/apple-touch-icon.png" rel="apple-touch-icon"/><link href="/assets/icons/favicon/site.webmanifest" rel="manifest"/><link href="https://renfaut.org/principles.html" rel="canonical"/><meta content="website" property="og:type"/><meta content="https://renfaut.org/principles.html" property="og:url"/><meta content="Renfaut" property="og:site_name"/><meta content="Five Principles | Renfaut™" property="og:title"/><meta content="Explore the five principles and fifteen facets of the Renfaut™ Praxis Paradigm and how they work together to produce transformative leadership." property="og:description"/><meta content="https://renfaut.org/assets/social/social-preview.png" property="og:image"/><meta content="https://renfaut.org/assets/social/social-preview.png" property="og:image:secure_url"/><meta content="image/png" property="og:image:type"/><meta content="1200" property="og:image:width"/><meta content="630" property="og:image:height"/><meta content="summary_large_image" name="twitter:card"/><meta content="Five Principles | Renfaut™" name="twitter:title"/><meta content="Explore the five principles and fifteen facets of the Renfaut™ Praxis Paradigm and how they work together to produce transformative leadership." name="twitter:description"/><meta content="https://renfaut.org/assets/social/social-preview.png" name="twitter:image"/></head>
+<body>
+<main>
+<section class="hero">
+<div class="container hero-grid">
+<div>
+<p class="eyebrow">The Renfaut™ Praxis Paradigm</p>
+<h1>Five principles. Fifteen practices. One dynamic system.</h1>
+<p class="lead">Renfaut™ explains how equity-centered leadership develops through reflexive practice: seeing systems clearly, imagining new possibilities, acting with courage, shifting organizational conditions, and sustaining renewal over time.</p>
+<div class="hero-actions">
+<a class="btn btn-primary" href="/rise-inventory.html">Complete the R.I.S.E. Index™</a>
+<a class="btn btn-secondary" href="#principles">Explore the Principles</a>
+</div>
+</div>
+<div aria-label="Renfaut ribbon visual" class="hero-visual">
+<img alt="Renfaut five-color ribbon lotus" class="hero-ribbon" src="/assets/logos/renfaut-icon.png"/>
+<p class="hero-caption">A visual language for movement, emergence, rupture, and renewal.</p>
+</div>
+</div>
+</section>
+<section id="principles">
+<div class="container">
+<div class="intro">
+<p class="eyebrow">Five interdependent principles</p>
+<h2>Transformative leadership is not a checklist.</h2>
+<p>The principles operate together as a dynamic system. Awareness deepens possibility; possibility shapes action; action shifts conditions; renewed conditions make deeper transformation possible.</p>
+<div aria-label="Renfaut transformation sequence" class="system-line">
+<span class="system-chip">See</span><span class="arrow">→</span>
+<span class="system-chip">Imagine</span><span class="arrow">→</span>
+<span class="system-chip">Act</span><span class="arrow">→</span>
+<span class="system-chip">Shift</span><span class="arrow">→</span>
+<span class="system-chip">Renew</span>
+</div>
+</div>
+<div class="principle-grid">
+<a class="principle-card" href="#reality-reckoning" style="--c:#B31217;--a:#8A0E12;--f:#F6D6D7">
+<div class="icon-wrap"><img alt="Reality Reckoning icon" src="/assets/icons/principles/rr-brand.svg"/></div>
+<p class="eyebrow">Principle</p>
+<h3>Reality Reckoning</h3>
+<p>Learning to see systems as they truly are.</p>
+</a>
+<a class="principle-card" href="#indeterminate-becoming" style="--c:#E76F00;--a:#B85A00;--f:#FBE2C7">
+<div class="icon-wrap"><img alt="Indeterminate Becoming icon" src="/assets/icons/principles/ib-brand.svg"/></div>
+<p class="eyebrow">Principle</p>
+<h3>Indeterminate Becoming</h3>
+<p>Expanding what leaders believe is possible.</p>
+</a>
+<a class="principle-card" href="#disruptive-engagement" style="--c:#F7B500;--a:#C88F00;--f:#FDEFC2">
+<div class="icon-wrap"><img alt="Disruptive Engagement icon" src="/assets/icons/principles/de-brand.svg"/></div>
+<p class="eyebrow">Principle</p>
+<h3>Disruptive Engagement</h3>
+<p>Turning awareness into courageous action.</p>
+</a>
+<a class="principle-card" href="#emancipatory-shift" style="--c:#38BFD8;--a:#238FA3;--f:#D7F1F6">
+<div class="icon-wrap"><img alt="Emancipatory Shift icon" src="/assets/icons/principles/es-brand.svg"/></div>
+<p class="eyebrow">Principle</p>
+<h3>Emancipatory Shift</h3>
+<p>Changing the conditions that shape organizational life.</p>
+</a>
+<a class="principle-card" href="#radical-renewal" style="--c:#6C3FBF;--a:#532E96;--f:#E5DDF5">
+<div class="icon-wrap"><img alt="Radical Renewal icon" src="/assets/icons/principles/ra-brand.svg"/></div>
+<p class="eyebrow">Principle</p>
+<h3>Radical Renewal</h3>
+<p>Sustaining transformation through ongoing regeneration.</p>
+</a>
+</div>
+</div>
+</section>
+<section class="principle-detail" id="reality-reckoning" style="--c:#B31217;--a:#8A0E12;--f:#F6D6D7">
+<div class="container detail-grid">
+<div class="detail-media"><img alt="Reality Reckoning icon" src="/assets/icons/principles/rr-brand.svg"/></div>
+<div class="detail-copy">
+<p class="eyebrow">Reality Reckoning</p>
+<h2>Learning to see systems as they truly are.</h2>
+<p>Reality Reckoning develops the clarity and courage to name what is happening beneath the surface of organizational life. Leaders learn to examine power, positionality, and structural conditions instead of treating problems as isolated events.</p>
+<div class="facet-grid">
+<div class="facet"><h3>Systemic Literacy</h3><p>Recognizing patterns, structures, histories, and organizational conditions that shape outcomes.</p></div>
+<div class="facet"><h3>Positionality Literacy</h3><p>Understanding how identity, role, power, and perspective influence how leaders see and act.</p></div>
+<div class="facet"><h3>Truth-Telling Capacity</h3><p>Creating conditions where difficult truths can be named, heard, and addressed responsibly.</p></div>
+</div>
+</div>
+</div>
+</section>
+<section class="principle-detail" id="indeterminate-becoming" style="--c:#E76F00;--a:#B85A00;--f:#FBE2C7">
+<div class="container detail-grid">
+<div class="detail-media"><img alt="Indeterminate Becoming icon" src="/assets/icons/principles/ib-brand.svg"/></div>
+<div class="detail-copy">
+<p class="eyebrow">Indeterminate Becoming</p>
+<h2>Expanding what leaders believe is possible.</h2>
+<p>Indeterminate Becoming invites leaders to work with uncertainty without retreating into control. It cultivates imagination, adaptive judgment, and humility in complex systems where transformation cannot be fully predicted in advance.</p>
+<div class="facet-grid">
+<div class="facet"><h3>Nonlinear Thinking</h3><p>Working with complexity, emergence, and multiple pathways rather than forcing simple solutions.</p></div>
+<div class="facet"><h3>Identity Flex in Context</h3><p>Adapting leadership in response to context while remaining grounded in equity and purpose.</p></div>
+<div class="facet"><h3>Emergent Humility</h3><p>Remaining teachable as conditions shift and new understanding becomes possible.</p></div>
+</div>
+</div>
+</div>
+</section>
+<section class="principle-detail" id="disruptive-engagement" style="--c:#F7B500;--a:#C88F00;--f:#FDEFC2">
+<div class="container detail-grid">
+<div class="detail-media"><img alt="Disruptive Engagement icon" src="/assets/icons/principles/de-brand.svg"/></div>
+<div class="detail-copy">
+<p class="eyebrow">Disruptive Engagement</p>
+<h2>Turning awareness into courageous action.</h2>
+<p>Disruptive Engagement moves leadership beyond insight. It focuses on interrupting inequitable patterns, strengthening solidarity, and using dialogue to create new possibilities for justice-centered action.</p>
+<div class="facet-grid">
+<div class="facet"><h3>Interruptive Practice</h3><p>Challenging routines, assumptions, and decisions that reproduce inequity.</p></div>
+<div class="facet"><h3>Solidarity Praxis</h3><p>Acting with and alongside others in ways that build trust, accountability, and shared power.</p></div>
+<div class="facet"><h3>Dialogic Disruption</h3><p>Using conversation to surface tension, interrupt avoidance, and generate new understanding.</p></div>
+</div>
+</div>
+</div>
+</section>
+<section class="principle-detail" id="emancipatory-shift" style="--c:#38BFD8;--a:#238FA3;--f:#D7F1F6">
+<div class="container detail-grid">
+<div class="detail-media"><img alt="Emancipatory Shift icon" src="/assets/icons/principles/es-brand.svg"/></div>
+<div class="detail-copy">
+<p class="eyebrow">Emancipatory Shift</p>
+<h2>Changing the conditions that shape organizational life.</h2>
+<p>Emancipatory Shift focuses on redesigning systems, policies, and practices so equity becomes embedded in everyday organizational life rather than treated as an isolated initiative.</p>
+<div class="facet-grid">
+<div class="facet"><h3>Visionary Praxis</h3><p>Connecting daily leadership decisions to long-term liberation and transformation.</p></div>
+<div class="facet"><h3>Systems Reorientation</h3><p>Shifting structures, incentives, norms, and routines toward more equitable outcomes.</p></div>
+<div class="facet"><h3>Transformative Policy Praxis</h3><p>Embedding justice into policy, governance, accountability, and decision-making.</p></div>
+</div>
+</div>
+</div>
+</section>
+<section class="principle-detail" id="radical-renewal" style="--c:#6C3FBF;--a:#532E96;--f:#E5DDF5">
+<div class="container detail-grid">
+<div class="detail-media"><img alt="Radical Renewal icon" src="/assets/icons/principles/ra-brand.svg"/></div>
+<div class="detail-copy">
+<p class="eyebrow">Radical Renewal</p>
+<h2>Sustaining transformation through ongoing regeneration.</h2>
+<p>Radical Renewal recognizes that transformation is never finished. Leaders and organizations must continually regenerate purpose, restore relation, and remain responsive to changing conditions.</p>
+<div class="facet-grid">
+<div class="facet"><h3>Regenerative Orientation</h3><p>Building sustainable capacity for renewal, reflection, learning, and adaptation.</p></div>
+<div class="facet"><h3>Collective Centering</h3><p>Prioritizing shared wellbeing, belonging, and collective responsibility.</p></div>
+<div class="facet"><h3>Return to Relation</h3><p>Restoring relationship as the foundation of leadership, accountability, and transformation.</p></div>
+</div>
+</div>
+</div>
+</section>
+<section class="matrix-section" id="facets">
+<div class="container">
+<div class="intro">
+<p class="eyebrow">Fifteen facets</p>
+<h2>The practices make the principles actionable.</h2>
+<p>Each Renfaut™ principle is expressed through three leadership practices. Together, the fifteen facets translate the praxis paradigm into observable patterns of leadership.</p>
+</div>
+<div class="matrix">
+<div class="matrix-col" style="--c:#B31217;--a:#8A0E12;--f:#F6D6D7"><div class="matrix-head"><img alt="" src="/assets/icons/principles/rr-brand.svg"/><h3>Reality Reckoning</h3></div><div class="matrix-item"><strong>Systemic Literacy</strong><span>Seeing patterns and structures.</span></div><div class="matrix-item"><strong>Positionality Literacy</strong><span>Understanding power and perspective.</span></div><div class="matrix-item"><strong>Truth-Telling Capacity</strong><span>Naming reality responsibly.</span></div></div>
+<div class="matrix-col" style="--c:#E76F00;--a:#B85A00;--f:#FBE2C7"><div class="matrix-head"><img alt="" src="/assets/icons/principles/ib-brand.svg"/><h3>Indeterminate Becoming</h3></div><div class="matrix-item"><strong>Nonlinear Thinking</strong><span>Working with complexity.</span></div><div class="matrix-item"><strong>Identity Flex in Context</strong><span>Adapting while grounded.</span></div><div class="matrix-item"><strong>Emergent Humility</strong><span>Remaining teachable.</span></div></div>
+<div class="matrix-col" style="--c:#F7B500;--a:#C88F00;--f:#FDEFC2"><div class="matrix-head"><img alt="" src="/assets/icons/principles/de-brand.svg"/><h3>Disruptive Engagement</h3></div><div class="matrix-item"><strong>Interruptive Practice</strong><span>Challenging inequitable patterns.</span></div><div class="matrix-item"><strong>Solidarity Praxis</strong><span>Acting with shared accountability.</span></div><div class="matrix-item"><strong>Dialogic Disruption</strong><span>Using dialogue to create movement.</span></div></div>
+<div class="matrix-col" style="--c:#38BFD8;--a:#238FA3;--f:#D7F1F6"><div class="matrix-head"><img alt="" src="/assets/icons/principles/es-brand.svg"/><h3>Emancipatory Shift</h3></div><div class="matrix-item"><strong>Visionary Praxis</strong><span>Linking action to liberation.</span></div><div class="matrix-item"><strong>Systems Reorientation</strong><span>Changing organizational conditions.</span></div><div class="matrix-item"><strong>Transformative Policy Praxis</strong><span>Embedding equity into policy.</span></div></div>
+<div class="matrix-col" style="--c:#6C3FBF;--a:#532E96;--f:#E5DDF5"><div class="matrix-head"><img alt="" src="/assets/icons/principles/ra-brand.svg"/><h3>Radical Renewal</h3></div><div class="matrix-item"><strong>Regenerative Orientation</strong><span>Sustaining adaptive capacity.</span></div><div class="matrix-item"><strong>Collective Centering</strong><span>Centering shared wellbeing.</span></div><div class="matrix-item"><strong>Return to Relation</strong><span>Restoring relationship.</span></div></div>
+</div>
+</div>
+</section>
+<section class="works" id="transformation">
+<div class="container">
+<div class="intro">
+<p class="eyebrow">How the system works</p>
+<h2>Transformation emerges through interaction.</h2>
+<p>Renfaut™ is not a linear sequence. The principles continually shape one another as leaders move between perception, imagination, action, structural change, and renewal.</p>
+</div>
+<div class="flow">
+<div class="flow-step"><strong>See</strong><p>Reality Reckoning reveals the conditions that must be confronted.</p></div>
+<div class="flow-step"><strong>Imagine</strong><p>Indeterminate Becoming expands what the leader and system can consider possible.</p></div>
+<div class="flow-step"><strong>Act</strong><p>Disruptive Engagement converts awareness into accountable movement.</p></div>
+<div class="flow-step"><strong>Shift</strong><p>Emancipatory Shift changes the structures, policies, and norms that shape practice.</p></div>
+<div class="flow-step"><strong>Renew</strong><p>Radical Renewal sustains transformation through relational and regenerative practice.</p></div>
+</div>
+</div>
+</section>
+<section class="comparison">
+<div class="container">
+<div class="intro">
+<p class="eyebrow">Why Renfaut™ is different</p>
+<h2>A praxis paradigm, not a checklist.</h2>
+<p>Renfaut™ supports leadership transformation by integrating ways of being, knowing, and doing.</p>
+</div>
+<div class="compare-grid">
+<div class="compare-card"><h3>Conventional Leadership Approaches</h3><ul><li>Often emphasize competencies or behaviors.</li><li>Assume change can be planned and controlled.</li><li>Focus on individual performance.</li><li>Treat equity as a program or initiative.</li></ul></div>
+<div class="compare-card"><h3>Renfaut™ Praxis Paradigm</h3><ul><li>Cultivates reflexive ways of being, knowing, and doing.</li><li>Works with complexity, emergence, and uncertainty.</li><li>Connects individual practice, relationship, and systems change.</li><li>Embeds equity into transformation itself.</li></ul></div>
+</div>
+</div>
+</section>
+<section class="cta">
+<div class="container">
+<div class="cta-card">
+<h2>Ready to understand your leadership practice?</h2>
+<p>The R.I.S.E. Index™ translates the Renfaut™ Praxis Paradigm into a personalized leadership profile with insight into strengths, growth opportunities, and next steps.</p>
+<div class="hero-actions" style="justify-content:center">
+<a class="btn btn-primary" href="/rise-inventory.html">Complete the R.I.S.E. Index™</a>
+<a class="btn btn-secondary" href="/leadership-lab.html">Explore the Leadership Lab™</a>
+</div>
+</div>
+</div>
+</section>
+</main>
+<script id="renfaut-dropdown-navigation">
+  (function () {
+    const dropdowns = document.querySelectorAll('.rn-nav-dropdown');
+    dropdowns.forEach(function (drop) {
+      const toggle = drop.querySelector('.rn-dropdown-toggle');
+      if (!toggle) return;
+      toggle.setAttribute('aria-expanded', 'false');
+      toggle.addEventListener('click', function (event) {
+        event.preventDefault();
+        const isOpen = drop.classList.contains('open');
+        dropdowns.forEach(function (other) {
+          other.classList.remove('open');
+          const otherToggle = other.querySelector('.rn-dropdown-toggle');
+          if (otherToggle) otherToggle.setAttribute('aria-expanded', 'false');
+        });
+        if (!isOpen) {
+          drop.classList.add('open');
+          toggle.setAttribute('aria-expanded', 'true');
+        }
+      });
+      drop.querySelectorAll('.rn-dropdown-menu a').forEach(function (link) {
+        link.addEventListener('click', function () {
+          drop.classList.remove('open');
+          toggle.setAttribute('aria-expanded', 'false');
+        });
+      });
+    });
+    document.addEventListener('click', function (event) {
+      if (!event.target.closest('.rn-nav-dropdown')) {
+        dropdowns.forEach(function (drop) {
+          drop.classList.remove('open');
+          const toggle = drop.querySelector('.rn-dropdown-toggle');
+          if (toggle) toggle.setAttribute('aria-expanded', 'false');
+        });
+      }
+    });
+    document.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape') {
+        dropdowns.forEach(function (drop) {
+          drop.classList.remove('open');
+          const toggle = drop.querySelector('.rn-dropdown-toggle');
+          if (toggle) toggle.setAttribute('aria-expanded', 'false');
+        });
+      }
+    });
+  })();
+</script>
+</body>
+</html>

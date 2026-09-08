@@ -1,0 +1,17 @@
+{
+  "colors": {
+    "pageBackground": "#FAF7F2",
+    "heroBackground": "#2F2A63",
+    "text": "#111111",
+    "white": "#FFFFFF",
+    "RR": "#B31217",
+    "IB": "#E76F00",
+    "DE": "#F0D595",
+    "ES": "#36B9D8",
+    "RA": "#7A4CC2",
+    "engaging": "#0A7F86",
+    "enacting": "#E69A00",
+    "empowering": "#C20E1A"
+  },
+  "logo": "assets/logos/rise-index-logo.svg"
+}
